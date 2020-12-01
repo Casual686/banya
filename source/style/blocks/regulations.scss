@@ -1,0 +1,39 @@
+.regulations {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+
+    & h2 {
+        padding-top: 10px;
+    }
+    & p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    & .regulations_list {
+        @include tablets-mini() {
+            padding-left: 10px;
+        }
+    }
+
+    & .regulations_price{
+        list-style: disc;
+    }
+
+    & .regulations_list__desc {
+        list-style: none;
+
+        & li {
+            position: relative;
+            margin-left: 10px;
+        }
+
+        & li::before {
+            content:  "-";
+            position: absolute;
+            left: -10px;
+        }
+    }
+
+}

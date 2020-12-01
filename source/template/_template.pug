@@ -10,20 +10,32 @@ html
         meta(content="" name="keywords")
         meta(content="width=device-width, initial-scale=1.0" name="viewport")
         meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(name="yandex-verification" content="4b684f567a27caaf")
 
         //- favicon block start
+        link(rel="shortcut icon" href="img/icons/favicon1.ico" type="image/png")
         //- favicon block end
 
         link(rel='stylesheet' href='/css/foundation.css')
         link(rel='stylesheet' href='/css/main.css')
         block scripts
         script(src='/js/foundation.js' defer)
+        script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=' crossorigin='anonymous')
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
         script(src='/js/main.js' defer)
 
         <!--[if lt IE 9]>
         script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
         <![endif]-->
-
-    body
-      .wrapper
-        block content
+        
+        noscript
+            div
+                img(src="https://mc.yandex.ru/watch/46812030" style="position:absolute; left:-9999px;" alt="")
+    body      
+        .wrapper
+            block header
+            main.page-content.compensate-for-scrollbar
+                .container.container-bg
+                    block content
+                block map
+        block footer

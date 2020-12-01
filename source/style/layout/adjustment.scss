@@ -5,13 +5,14 @@ body {
 }
 
 body {
-	font-family: Arial, Tahoma, sans-serif;
+	font-family: 'kurale', Arial, Tahoma, sans-serif;
 	margin: 0;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.42;
-	color: $main--dark;
+	color: $brown-dark;
 	-webkit-font-smoothing: antialiased;
+	background: url('../../img/bg/bg-2.jpg');
 
 	@include tablets() {
 		font-size: 14px;
@@ -27,7 +28,26 @@ body {
 	@include phones() {
         min-width: 320px;
     }
+
+	&::after {
+		content: "";
+		display: block;
+		height: $footer-height;
+	}
 }
+
+.container {
+	max-width: $container-width + 20px;
+	margin: 0 auto;
+	@extend %clearfix;
+}
+
+.footer {
+    width: 100%;
+    height: $footer-height;
+	margin-top: -$footer-height;
+}
+
 
 ul {
 	padding: 0;
@@ -39,7 +59,16 @@ p {
 	margin: 0;
 }
 
-h1,
+h1 {
+	padding: 20px;
+	margin: 0;
+	font-weight: normal;
+	text-align: center;
+	@include phones() {
+		padding: 10px;
+	}
+}
+
 h2,
 h3,
 h4,
@@ -58,4 +87,13 @@ button {
 
 * {
 	box-sizing: border-box;
+}
+
+
+%clearfix {
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
 }

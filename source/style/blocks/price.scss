@@ -1,0 +1,40 @@
+.price {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+
+    & h2 {
+        padding-left: 60px;
+        padding-top: 10px;
+
+        @include tablets-mini() {
+            padding-left: 10px;
+        }
+    }
+    & p {
+        padding: 20px;
+        text-align: center;
+    }
+    & ul {
+        list-style: disc;
+        padding-left: 125px;
+
+        @include tablets-mini() {
+            padding-left: 35px;
+        }
+
+    }
+    & .ps {
+        color: #8f9192;
+        font-size: 14px;
+    }
+}
+.description {
+  padding-left: 60px;
+  font-style: italic;
+
+  @include tablets-mini() {
+      padding-left: 10px;
+  }
+
+}

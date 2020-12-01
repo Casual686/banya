@@ -45,6 +45,12 @@
 	}
 }
 
+@mixin tablets-mini() {
+	@media screen and (max-width: 743px) {
+		@content;
+	}
+}
+
 @mixin phones() {
   @media screen and (max-width: 480px) {
     @content;

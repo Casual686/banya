@@ -1,0 +1,153 @@
+.container-bg {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.64);
+}
+
+.gallery {
+    font-weight: 400;
+    position: relative;
+    @extend %clearfix;
+
+    &:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 573px;
+        height: 10px;
+        background: url('../../img/decor/strip.png') no-repeat;
+        transform: translateX(-50%);
+
+
+        @include phones() {
+            display: none;
+        }
+    }
+
+    @include tablets() {
+        padding-top: 0;
+    }
+
+    @include phones() {
+        font-size: 16px;
+    }
+}
+
+.gallery__left,
+.gallery__right  {
+    float: left;
+    width: 50%;
+    padding: 20px;
+
+    @include tablets-mini() {
+        width: 100%;
+    }
+}
+
+.float-right {
+    float: right;
+
+    @include phones() {
+        padding: 20px 10px 0;
+    }
+}
+
+
+.gallery__img {
+    max-width: 300px;
+
+        & a {
+            display: block;
+        }
+        & a:hover img{
+            transform: scale();
+        }
+}
+
+.view {
+   margin: 10px;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   cursor: default;
+}
+
+.view .mask, .view .content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.view a.info {
+   background:url('/img/decor/zoom.png') center no-repeat;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+}
+
+.view a.info-big_v{
+    width:300px;
+    height:384px;
+}
+.view a.info-big_h{
+    width:300px;
+    height:224px;
+}
+.view a.info-small_v{
+    width:100px;
+    height:134px;
+}
+.view a.info-small_h{
+    width:100px;
+    height:75px;
+}
+
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:150px solid rgba(0,0,0,0.7);
+   box-sizing:border-box;
+   transition: all 0.1s ease-in-out;
+}
+
+.third-effect a.info {
+   position:relative;
+   left: -150px; /* Center the link */
+   top: -155px; /* Center the link */
+   opacity: 0;
+   transition: opacity 1s 0s ease-in-out;
+}
+
+.third-effect:hover .mask {
+   opacity: 1;
+   border:150px solid rgba(0,0,0,0.7);
+}
+
+.third-effect:hover a.info {
+   opacity: .7;
+}
+
+.gallery__img_small {
+    display: inline-block;
+    max-width: 100px;
+}
+
+.gallery__pic {
+    width: 100%;
+}
+
+.fancybox-caption {
+  font-size: 28px;
+}

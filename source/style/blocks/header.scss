@@ -1,0 +1,202 @@
+.header {
+    min-height: 260px;
+    background: url('../../img/bg/bg-1.jpg');
+    background-size: cover;
+    color: $white;
+
+    @include tablets() {
+        min-height: auto;
+    }
+}
+
+.header__wrap {
+    position: relative;
+    @extend %clearfix;
+    padding: 20px 20px 0 20px;
+
+    @include tablets-mini() {
+        padding: 0 10px;
+    }
+
+}
+
+.header__left,
+.header__center  {
+    float: left;
+    width: 33.3%;
+}
+
+.header__left {
+
+
+    @include phones() {
+        width: 50%;
+    }
+
+}
+
+
+.header__right {
+    float: right;
+    width: 33.3%;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: -50px;
+
+
+
+    @include tablets() {
+        margin-left: -25px;
+        font-size: 18px;
+    }
+
+    @include tablets-mini() {
+      font-size: 14px;
+    }
+
+    @include phones() {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+}
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    line-height: 0.8;
+
+    @include laptop() {
+        padding-top: 23px;
+        font-size: 40px;
+    }
+
+    @include tablets-mini() {
+        font-size: 30px;
+    }
+
+    @include phones() {
+        padding-top: 0;
+        font-size: 24px;
+    }
+
+}
+
+.logo_name,
+.header__phone {
+    text-shadow: 6px 6px 2px $brown-dark, 0 0 1em $broun-light;
+    color: $white;
+    text-decoration: none;
+}
+
+.header__location {
+    display: block;
+    font-size: 22px;
+
+    @include laptop() {
+        font-size: 19px;
+    }
+    @include tablets-mini() {
+      font-size: 14px;
+    }
+    @include phones() {
+        padding-top: 0;
+        font-size: 13px;
+    }
+}
+
+.header__center {
+    height: 170px;
+    width: 234px;
+    margin-left: 50px;
+    background-image: url(../../img/decor/girl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    @include laptop() {
+        margin-left: 0px;
+    }
+
+    @include tablets() {
+      height: 146px;
+      width: 200px;
+    }
+    @include tablets-mini() {
+      height: 124px;
+      width: 170px;
+    }
+
+    @include phones() {
+        display: none;
+    }
+
+}
+
+.header__menu {
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.menu__list {
+    text-align: center;
+
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+
+    &:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        width: 6px;
+        height: 6px;
+        background-color: $white;
+        left: -7px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+
+
+        @include tablets() {
+            top: 15px;
+            width: 5px;
+            height: 5px;
+        }
+        @include phones() {
+            display: none;
+        }
+
+    }
+}
+
+.menu__link {
+    display: block;
+    padding: 6px 24px;
+    color: $white;
+    text-decoration: none;
+    font-size: 24px;
+
+    &:hover{
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 3px;
+    }
+
+    @include tablets() {
+        font-size: 16px;
+        padding: 6px 18px;
+    }
+
+    @include phones() {
+        font-size: 16px;
+        padding: 3px 9px;
+    }
+}

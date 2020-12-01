@@ -1,8 +1,14 @@
 extends ../_template
 
 block variables
-    - var title = 'Home page'
+    - var title = 'Аренда дома с сауной'
 
 
+block header
+    include ../common/_header
+    
 block content
-    h1 hellow world!!!
+    include ../common/_content
+
+block footer
+    include ../common/_footer

@@ -5,7 +5,7 @@
 #### install
 
 > Clone project from computer
-1. ```git clone https://github.com/Casual686/Gulp4Builder.git folder_name```
+1. ```git clone https://github.com/Casual686/banya.git folder_name```
 > Change directory
 2. ```cd folder_name/```
 > Set you git repo for push
@@ -14,9 +14,5 @@
 4. ```npm install gulpjs/gulp-cli -g```  
 > Install packages
 5. ```npm install``` or just ```yarn``` ;)
-> Cleaning
-6. Delete files```forEmptyFolder.del``` in folders```fonts```, ```img```, ```/style/blocks/```
 > Run Gulp
 7. ```gulp```
-
-> Tasks creating sprites are disabled by default!

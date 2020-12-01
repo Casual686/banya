@@ -1,7 +1,30 @@
-// @font-face {
-//     font-family: 'bernier_regularregular';
-//     src: url('../../fonts/bernier/bernierdistressed-regular-webfont.woff') format('woff'),
-//          url('../../fonts/bernier/bernierregular-regular-webfont.svg#bernier_regularregular') format('svg');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'ds_greece';
+    src: url('../../fonts/greece/ds_greece.woff') format('woff'),
+         url('../../fonts/greece/ds_greece.svg#ds_greeceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kurale';
+    src: url('../../fonts/kurale/kurale.woff') format('woff'),
+         url('../../fonts/kurale/kurale.svg#kuraleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'minion';
+    src: url('../../fonts/minion/minion_semibold.woff') format('woff'),
+         url('../../fonts/minion/minion_semibold.svg#minion_cyrillic_semibolnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CyrillicOld';
+    src: url('../../fonts/CyrillicOld/CyrillicOld.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
