@@ -1,6 +1,6 @@
 {
-    "name": "Gulp4-Build",
-    "version": "1.0.0",
+    "name": "banya-web",
+    "version": "1.0.1",
     "author": "Casual",
     "license": "ISC",
     "scripts": {},
@@ -33,6 +33,10 @@
     },
     "dependencies": {
         "@fancyapps/fancybox": "^3.5.7",
+        "fancybox": "^3.0.1",
         "normalize.css": "~5.0.0"
-    }
+    },
+    "description": "web page",
+    "main": "index.js",
+    "repository": "https://github.com/Casual686/banya.git"
 }
